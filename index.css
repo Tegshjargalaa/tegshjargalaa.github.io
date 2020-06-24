@@ -1,0 +1,75 @@
+body{ 
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+    font-size: 16px;
+    align-items: center;
+    margin: 0px;
+    background-image: radial-gradient(
+        at 10% 10%,
+        #455a64 30%,
+        #ff8a65 100%
+    );
+    background-repeat: no-repeat;
+}
+
+.header{
+    width: 100%;
+    height: 30px;
+    background-color: #37474f;
+}
+
+.Body
+{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Body div{
+    min-height: 300px;
+    height: auto;
+    padding: 5px 10px;
+}
+.Body div > p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box1{
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.ProfilePic
+{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: snow;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+ul{
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: snow;
+}
