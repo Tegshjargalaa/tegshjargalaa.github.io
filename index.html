@@ -2,32 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Tjka, 611169, CS47</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <img src="IMG_3022.JPG" alt="Tegsh Jargal" width="700" height="500">
-    <h1>Tegshjargal Jambaltseren #611169</h1>
+    <div class="header">
+        <h1>Welcome to Tjka's homepage</h1>
+    </div>
 
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Lab2/AboutMe.html">About Me</a></li>
+                    <li><a href="w1d2recipe/index.html">Recipe</a></li>
+                    <li><a href="w1d3/tmnt.html">Movie review</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <ul>
-        <li>W1D1 - Home Page</li>
-        <li><a href="Lab2/AboutMe.html">W1D2 - About Me</a></li>
-        <li><a href="w1d2recipe/index.html">W1D2 - Recipe</a></li>
-        <li><a href="w1d3/tmnt.html">W1D3 - Movie review</a></li>
-        <li>W1D4 - Movie Review</li>
-        <li>W1D4 - Movie Review</li>
-        <li>W1D5 - MP3 Library</li>
-        <li>W1D6 - Movie Review PHP</li>
-    </ul>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-4 sidenav">
+                <img src="IMG_3022.JPG" alt="Tegsh Jargal" width="200" height="150">
+                <p>Tegshjargal Jambaltseren
+                    student of MIU</p>
+            </div>
+            <div class="col-sm-4 text-left">
+                <h1>Assignments</h1>
+                <ul>
+                    <li>W1D1 - Home Page</li>
+                    <li><a href="Lab2/AboutMe.html">W1D2 - About Me</a></li>
+                    <li><a href="w1d2recipe/index.html">W1D2 - Recipe</a></li>
+                    <li><a href="w1d3/tmnt.html">W1D3 - Movie review</a></li>
+                    <li>W1D4 - Movie Review</li>
+                    <li>W1D4 - Movie Review</li>
+                    <li>W1D5 - MP3 Library</li>
+                    <li>W1D6 - Movie Review PHP</li>
+                </ul>
 
-    <p>
-        <a href="http://validator.w3.org/check/referer">
-            <img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" />
-        </a> 
-    </p>
+            </div>
+            <div class="col-sm-4 sidenav">
+                <div class="well">
+                    <h1>Lectures</h1>
+                    <ul>
+                        <li>W1D1 - HTML and CSS</li>
+                        <li>W1D2 - CSS for Styling</li>
+                        <li>W1D3 - CSS for Page Layout</li>
+                        <li>W1D4 - HTML5 Forms</li>
+                        <li>W1D5 - JavaScript</li>
+                        <li>W1D6 - JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <p>
+                <a href="http://validator.w3.org/check/referer">
+                    <img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" />
+                </a>
+            </p>
+            </p>
+        </footer>
+
 </body>
 
 </html>
