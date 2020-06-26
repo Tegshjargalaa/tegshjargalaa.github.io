@@ -27,7 +27,10 @@ font-size: 35px;
   .well{
       text-align: left;
   }
-
+.profile-pic {
+    width: 350px;
+    height: 250px;
+}
   
   /* Set black background color, white text and some padding */
   footer {
