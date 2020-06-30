@@ -53,7 +53,7 @@ label {
   font-size: 24px;
 }
 
-.btn {
+/* .btn {
   background-color: #4CAF50;
   color: white;
   padding: 12px;
@@ -63,11 +63,11 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   background-color: #45a049;
-}
+} */
 
 span.price {
   float: right;
@@ -84,22 +84,35 @@ span.price {
   }
 }
 .buttons{
-  text-align: left;
+  text-align: right;
 }
 
 
 .buttonReset{
   color: black;
+  padding: 8px;
   border-color: black;
+  border-radius: 4px;
+  margin: 10px;
 }
 .buttonCancel{
-  border-color: red;
-  color: red;
+  border-color:orange;
+  padding: 8px;
+  color: orange;
+  border-radius: 4px;
+  margin: 10px;
 }
 .buttonAdd{
-  color: blue;
-  border-color: blue;
+  color:lightskyblue;
+  padding: 8px;
+  border-color: lightskyblue;
+  border-radius: 4px;
+  margin: 10px;
 }
+/* .buttonSignout{
+  background-color: #e7e7e7; 
+  color: black;} */
+
 
 * {box-sizing: border-box;}
 
@@ -134,7 +147,7 @@ body {
 }
 
 .topnav .login-container {
-  background-color: #2196F3;
+  background-color: #2196f3;
   float: right;
 }
 
@@ -152,15 +165,16 @@ body {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background-color: #2196F3;
-  color: white;
+  background-color: rgb(236, 234, 234);
+  color: rgb(99, 97, 97);
   font-size: 17px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .topnav .login-container button:hover {
-  background-color: green;
+  background-color: grey;
 }
 
 @media screen and (max-width: 600px) {
