@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="webform1.css" type="text/css">
+    <script src="webform1.js"></script>
+</head>
+
+<body onload='document.form1.text1.focus()'>
+
+    <h2>Login Form</h2>
+
+    <form name="form1" action="webform1" method="post">
+
+
+        <div class="container">
+            <label for="email"><b>Email address</b></label>
+            <input type="text" placeholder="Enter email" name="email" required>
+            <p>
+                We'll never share your email with anyone else.
+            </p>
+
+            <label for="passw"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="text1" required>
+
+
+
+
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Check me out
+            </label>
+
+
+            <div>
+                <button type="submit" class="submit" name="submit"
+                    onclick="CheckPassword(document.form1.text1)"
+                    onclick="isValidHttpUrl(document.form1.text2)"><b>Submit</b></button>
+            </div>
+            <div><label for="url"><b>URL</b></label>
+                <input type="url" placeholder="Enter URL" name="text2" required></div>
+
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>

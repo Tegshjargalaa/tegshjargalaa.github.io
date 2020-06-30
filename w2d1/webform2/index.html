@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="webform2.css" type="text/css">
+
+    <!-- <script src="webform2.js"></script> -->
+</head>
+<div class="topnav">
+    <a class="active" href="#home">MUM Golden Dome Market:::SRM System</a>
+    <a href="#about">Product</a>
+    <a href="#contact">Supplier</a>
+    <div class="login-container">
+      <form action="/action_page.php">
+        <button type="submit">Sign Out</button>
+      </form>
+    </div>
+  </div>
+  
+
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="/action_page.php">
+                <h1>New Product Form</h1>
+                <div class="row">
+                    <div class="col-25">
+                
+                        <label for="fname"><i class="fa fa-user"></i> Product Number</label>
+                            <input type="text" id="pnumber" name="Product Number">
+                            <label for="name"><i class="fa fa-envelope"></i> Name</label>
+                            <input type="text" id="name" name="name">
+                            <label for="price"><i class="fa fa-price-card-o"></i> Unit Price</label>
+                            <input type="text" id="price" name="price" placeholder="0.0">
+                            
+                    </div>
+
+                    <div class="col-25">
+
+                        <label for="cname">Quantity in stock</label>
+                        <input type="text" id="cname" name="cardname" placeholder="0">
+                        <label for="ccnum">Supplier:</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="Select a supplier">
+                        <label for="expmonth">Date Supplied</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="yyyy-mm-dd">
+
+                   <div class="buttons">
+                    <button class="buttonReset">Reset</button>
+                    <button class="buttonCancel">Cancel</button>
+                    <button class="buttonAdd">Add Product</button>
+                   </div> 
+                
+            </form>
+            </form>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-25">
+
+    </div>
+</div>
+
+</body>
+
+</html>
