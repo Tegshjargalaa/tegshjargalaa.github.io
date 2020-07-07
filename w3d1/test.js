@@ -2,39 +2,39 @@
     "user strict";
     
     describe("Account", function (){
-        let account1 = new Account(555555);
-        it ("Account: Number()",
+        let acc1 = new Account(555555);
+        it ("Account: getNumber()",
             function (){
-                assert.equal (555555, account1.getNumber());
+                assert.equal (555555, acc1.getNumber());
             }
         )
-        it ("Account: Balance()",
+        it ("Account: getBalance()",
             function (){
-                assert.equal (0, account1.getBalance ());
+                assert.equal (0, acc1.getBalance ());
             }
         )
         it ("Account: deposit()",
             function (){
-                account1.deposit(1000);
-                assert.equal (1000, account1.getBalance ());
+                acc1.deposit(10000);
+                assert.equal (10000, acc1.getBalance ());
             }
         )
         it ("Account: withdraw()",
             function (){
-                account1.withdraw(150);
-                assert.equal (850, account1.getBalance ());
+                acc1.withdraw(500);
+                assert.equal (9500, acc1.getBalance ());
             }
         )
         it ("Account: toString()",
             function (){
-                assert.equal ("Account " + account1.getNumber() + ": balance " + account1.getBalance(), account1.toString());
+                assert.equal ("Account " + acc1.getNumber() + ": balance " + acc1.getBalance(), acc1.toString());
             }
         )
     });
     
     describe("Savings Account", function (){
-        let savingsAccount = new SavingsAccount(666666, 0.5);
-        savingsAccount.deposit(1000);
+        let savingsAccount = new SavingsAccount(10002, 0.5);
+        savingsAccount.deposit(10000);
         it ("Savings Account: getter function for interest",
             function (){
                 assert.equal (0.5, savingsAccount.interest );
@@ -46,15 +46,11 @@
                 assert.equal (0.1, savingsAccount.interest );
             }
         )
-        it ("Savings Account: check balance after initiated 10000",
-            function (){
-                assert.equal (1000, savingsAccount.getBalance() );
-            }
-        )
+    
         it ("Savings Account: addInterest()",
             function (){
                 savingsAccount.addInterest();
-                assert.equal (1001, savingsAccount.getBalance() );
+                assert.equal (10010, savingsAccount.getBalance() );
             }
         )
         it ("Savings Account: toString()",
@@ -64,9 +60,8 @@
         )
     });
     
-    
     describe("Checking Account", function (){
-        let checkingAccount = new CheckingAccount(777777, 12000);
+        let checkingAccount = new CheckingAccount(10003, 12000);
         checkingAccount.deposit(10000);
         
         it ("Checking Account: getter function for limit",
@@ -78,11 +73,6 @@
             function (){
                 checkingAccount.interest = 8000;
                 assert.equal (8000, checkingAccount.interest );
-            }
-        )
-        it ("Checking Account: check balance after initiated 20000",
-            function (){
-                assert.equal (10000, checkingAccount.getBalance() );
             }
         )
         
@@ -104,38 +94,33 @@
         
         it ("Bank : addAccount()",
             function (){
-                assert.equal (1000, bankObject.addAccount() );
-            }
-        )
-        
-        it ("Bank : addSavingsAccount() with interest value 0.5",
-            function (){
-                assert.equal (1005, bankObject.addSavingsAccount() );
+                assert.equal (10000, bankObject.addAccount() );
             }
         )
         it ("Bank : addCheckingAccount() with overdraft 100",
             function (){
-                assert.equal (666666, bankObject.addCheckingAccount(100));
+                assert.equal (10001, bankObject.addCheckingAccount(100));
+            }
+        )
+        it ("Bank : addSavingsAccount() with interest value 0.2",
+            function (){
+                assert.equal (10002, bankObject.addSavingsAccount() );
             }
         )
         
         it ("Bank : closeAccount()",
             function (){
                 let tempArray = [];
-                tempArray = bankObject.closeAccount(666666);
+                tempArray = bankObject.closeAccount(555555);
                 assert.deepEqual( bankObject._accounts,tempArray);
             }
         )
-        
-        it("Bank: accountReport()", function() {
-            assert.deepEqual(bankObject.accountReport(), ["Account Number: 55555 Balance: 0", "Account Number: 666666 Balance: 0"]);
-        })
         
         it ("Bank : closeAccount()",
             function (){
                 let tempArray = [];
                 tempArray = bankObject.endOfMonth();
-                assert.deepEqual( ["Interest added SavingsAccount 666666 : balance: 0 interest: undefined"], tempArray);
+                assert.deepEqual( ["Interest added SavingsAccount10002 : balance: 0 interest: undefined"], tempArray);
             }
         )
         
