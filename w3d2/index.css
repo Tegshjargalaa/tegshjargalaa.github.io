@@ -1,0 +1,44 @@
+.container {
+    position: absolute;
+    font-family: Arial;
+    left: 200px;
+    top: 20px;
+}
+
+
+/* .label {
+    padding-top: 10px;
+} */
+
+
+/* .one {
+    background: rgba(208, 57, 159, 0.75);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: rotateZ(225deg);
+} */
+
+.circle {
+    background: rgba(208, 57, 159, 0.75);
+    /* background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); */
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
+    left: calc(50% - 6.25em);
+    top: calc(50% - 12.5em);
+    /* transform-origin: 10% 12.5em; */
+}
+
+
+/* .circle,
+.squircle {
+    border-top: 0.1em solid rgba(255, 255, 255, 0.4);
+    height: 12.5em;
+    position: absolute;
+    width: 12.5em;
+} */
