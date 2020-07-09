@@ -40,7 +40,7 @@ $(document).ready(function() {
 //     $('#end').mouseover(function(e) {
 //         if (isRunning) {
 //             alert("Congratulations! You win. =)");
-//             // $('#status').text('You win. =]');
+//             // $('#status').text('You win. =)');
 //             isRunning = false;
 //         }
 //     });
@@ -68,7 +68,7 @@ $(document).ready(function() {
 //     const element = $('div.boundary');
 //     if (isRunning) {
 //         element.addClass('youlose');
-//  // $('#status').text('Sorry, you lost. =[');
+//  // $('#status').text('Sorry, you lost. =(');
 //         isRunning = false;
 //         alert("Sorry, you lost. =(");
 //     }
