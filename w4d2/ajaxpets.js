@@ -10,7 +10,7 @@ function updatePictures() {
     } else {
         animal = "kitty";
     }
-    $.ajax("ajaxpets.php", {
+    $.ajax("http://mumstudents.org/cs472/2013-09/Sections/8/ajaxpets/ajaxpets.php", {
         "type": "get",
         "data": {
             "animal": animal
@@ -23,6 +23,14 @@ function displayPictures(data) {
     $("#pictures").html(data);
 }
 
+
+// url: "http://google.com",
+//     type: "GET",
+//     dataType: "jsonp",
+//     context: document.doctype
+// }).done(function(data) {
+//     alert(data);
+// });
 
 // document.observe("dom:loaded", function() {
 //     $("puppies").observe("click", updatePictures);
